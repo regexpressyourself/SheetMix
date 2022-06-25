@@ -156,9 +156,7 @@ export default function Login() {
                   setIsLogin(e.target.checked);
                 }}
                 value="login"
-                defaultChecked={
-                  isLogin
-                }
+                defaultChecked={isLogin}
               />{" "}
               Login
             </label>

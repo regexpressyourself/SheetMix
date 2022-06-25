@@ -5,22 +5,70 @@
   font-style: normal;
 }
 :root {
-  --hs-links: 48 100%;
   --color-foreground: hsl(0, 0%, 100%);
-  --color-background: hsl(278, 73%, 19%);
-  --color-links: hsl(var(--hs-links) 50%);
-  --color-links-hover: hsl(var(--hs-links) 45%);
-  --color-border: hsl(277, 85%, 38%);
-  --color-invalid: hsl(356, 100%, 71%);
+  --color-background: hsl(195, 83%, 16%);
+  --color-links: hsl(42, 100%, 50%);
+  --color-links-hover: hsl(42, 100%, 45%);
+  --color-border: hsl(195, 83%, 38%);
+  --color-invalid: hsl(346, 84%, 61%);
   --gradient-background: radial-gradient(
     circle,
-    rgba(152, 11, 238, 1) 0%,
-    rgba(118, 15, 181, 1) 35%,
-    rgba(58, 13, 85, 1) 100%
+    rgba(17, 138, 178, 1) 0%,
+    rgba(7, 59, 76, 1) 100%
   );
   --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
   --font-display: baloo, var(--font-body);
+}
+
+.hs-links {
+  background-color: var(--hs-links);
+  min-height: 5rem;
+  min-width: 5rem;
+  color: black;
+}
+
+.color-foreground {
+  background-color: var(--color-foreground);
+  color: black;
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.color-background {
+  background-color: var(--color-background);
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.color-links {
+  background-color: var(--color-links);
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.color-links-hover {
+  background-color: var(--color-links-hover);
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.color-border {
+  background-color: var(--color-border);
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.color-invalid {
+  background-color: var(--color-invalid);
+  min-height: 5rem;
+  min-width: 5rem;
+}
+
+.gradient-background {
+  background-image: var(--gradient-background);
+  min-height: 5rem;
+  min-width: 5rem;
 }
 
 html {
