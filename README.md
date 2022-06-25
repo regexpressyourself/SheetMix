@@ -1,4 +1,4 @@
-# Sam's Remix + Google Sheets App Starter Kit!
+# Sam's Remix + Google Sheets App Starter Kit
 
 - [Remix Docs](https://remix.run/docs)
 - [Google Sheets Docs](https://developers.google.com/sheets/api/quickstart/js)
