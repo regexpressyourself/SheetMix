@@ -1,0 +1,138 @@
+label {
+  padding-top: 1rem;
+}
+
+.entry-header {
+  align-items: center;
+  display: flex;
+}
+.entry-header a.link,
+.entry-header button.link {
+  padding-left: 1rem;
+}
+
+a.link {
+  font-size: 1rem;
+}
+
+a.link,
+button.link {
+  padding: 0;
+  background-color: transparent;
+  color: var(--color-links);
+  border: none;
+  box-shadow: none;
+}
+a.link.large,
+button.link.large {
+  font-size: 1.25rem;
+}
+a.link:active, a.link:hover,
+button.link:active,
+button.link:hover {
+  background-color: transparent;
+  color: var(--color-links);
+  text-decoration: underline;
+  border: none;
+  box-shadow: none;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-button p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.submit-button button {
+  width: 33%;
+}
+
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.workout-header > *:first-child {
+  flex-basis: 60%;
+}
+.workout-header > *:last-child {
+  flex-basis: 30%;
+  text-align: right;
+}
+
+.num-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0 1rem 0;
+}
+.num-input .step-button {
+  flex-basis: 15%;
+}
+.num-input input {
+  flex-basis: 60%;
+}
+.num-input span {
+  flex-basis: 33%;
+  text-align: right;
+}
+.num-input span button {
+  width: 40%;
+}
+.num-input span button:first-of-type {
+  margin-right: 1rem;
+}
+
+.entry-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.notes {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.notes > div {
+  flex-basis: 50%;
+}
+@media screen and (max-width: 724px) {
+  .notes {
+    flex-direction: column;
+  }
+}
+
+.notes-list li {
+  margin-bottom: 1rem;
+}
+
+.num-sets {
+  margin: 0;
+}
+
+.progress-bar {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  background-color: var(--color-foreground);
+  border: 0.2rem solid var(--color-foreground);
+  border-radius: 0.5rem;
+}
+
+.progress-bar__progress {
+  background-color: var(--color-background);
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: right 0.4s ease-in-out;
+}
+
+/*# sourceMappingURL=entry.css.map */
