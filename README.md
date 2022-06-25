@@ -1,4 +1,4 @@
-# Sam's Remix + Google Sheets App Starter Kit
+# Remix + Google Sheets App Starter Kit
 
 <img src="https://avatars.githubusercontent.com/u/64235328?s=200&v=4" /> <img src="https://avatars.githubusercontent.com/u/1342004?s=200&v=4" />
 
