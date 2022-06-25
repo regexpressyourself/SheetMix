@@ -13,8 +13,9 @@ const getOauthClient = async (request: Request) => {
     client_secret: process.env.GOOGLE_CLIENT_SECRET,
     client_id: process.env.GOOGLE_CLIENT_ID,
     redirect_uris: [
-      "https://wio.smessina.com/google-redirect",
-      "http://localhost:3000/google-redirect",
+      process.env.GOOGLE_REDIRECT_URI_PROD,
+      process.env.GOOGLE_REDIRECT_URI_STAGING,
+      process.env.GOOGLE_REDIRECT_URI_DEV,
     ],
   };
   const nextRedirectUri = process.env.NODE_ENV === "production" ? 0 : 1;
@@ -108,9 +109,7 @@ export const putSheetData = async (
     });
     return data;
   } catch (err) {
-    console.error(err);
-    throw new Error(err)
-    return { error: err };
+    throw new Error(err);
   }
 };
 

@@ -9,6 +9,9 @@
 - prettier: `yarn global add prettier`
 
 ## `.env` File
+
+A `.env` file should be placed at the project root, with the following variables:
+
 ```
 # Replace USERNAME, PASSWORD, DB_NAME
 DATABASE_URL=postgresql://USERNAME:PASSWORD@localhost/DB_NAME
@@ -16,9 +19,14 @@ DATABASE_URL=postgresql://USERNAME:PASSWORD@localhost/DB_NAME
 # Any string
 SESSION_SECRET=any_string
 
-# Google credentials ([See docs](https://developers.google.com/workspace/guides/create-credentials))
+# Google credentials (https://developers.google.com/workspace/guides/create-credentials)
 GOOGLE_CLIENT_ID=your_client_id
 GOOGLE_CLIENT_SECRET=your_secret
+
+# Google redirect URIs (e.g. http://localhost:3000/google-redirect)
+GOOGLE_REDIRECT_URI_DEV=your_dev_redirect_uri
+GOOGLE_REDIRECT_URI_STAGING=your_staging_redirect_uri
+GOOGLE_REDIRECT_URI_PROD=your_prod_redirect_uri
 
 # Node port of choice (default is 3000; not used in dev mode)
 PORT=3000
@@ -29,7 +37,7 @@ PORT=3000
 ### Initial setup
 
 1. Create: `npx prisma init --datasource-provider postgresql`
-    - _edit prisma/schema.prisma and add a model_
+   - _edit prisma/schema.prisma and add a model_
 2. Generate: `npx prisma generate`
 
 ### Maintenance
@@ -39,7 +47,6 @@ PORT=3000
 - Reset: `npx prisma migrate reset`
 - Re-create prisma schema based on DB: `npx prisma db push`
 - Web admin panel: `npx prisma studio`
-
 
 ## Development
 

@@ -226,9 +226,12 @@ export default function Entry() {
 export function ErrorBoundary({ error }: { error: Error }) {
   console.error(error);
   return (
-    <div className="error-container">
-      <h1>Error uploading data</h1>
-      <pre>{error.message}</pre>
-    </div>
+    <>
+      <div className="error-container">
+        <h1>Error uploading data</h1>
+        <pre>{error.message}</pre>
+      </div>
+      <a href="/entry">Back to entry page</a>
+    </>
   );
 }
